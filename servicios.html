@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valdes Cleaning Services – Servicios</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Logo Valdes Cleaning Services" class="logo-icon" />
+                Valdes Cleaning Services
+            </a>
+            <nav class="nav" id="nav-menu">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="servicios.html" class="active">Servicios</a></li>
+                    <li><a href="testimonios.html">Testimonios</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="lang-switcher">
+                <a href="servicios.html" class="lang active">ES</a> |
+                <a href="servicios_en.html" class="lang">EN</a>
+            </div>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú">☰</button>
+        </div>
+    </header>
+    <main class="container servicios">
+        <h1>Servicios de limpieza</h1>
+        <p>Ofrecemos soluciones de limpieza adaptadas a cada necesidad. Conoce en detalle lo que podemos hacer por ti.</p>
+        <!-- Move-in / Move-out -->
+        <section id="movein-moveout" class="service-detail">
+            <h2>Move‑in / Move‑out</h2>
+            <p>Las limpiezas de mudanza aseguran que tu propiedad quede impecable antes de entrar o al salir. Nuestro servicio de <strong>Move‑in</strong> se centra en dejar el espacio libre de polvo, suciedad y contaminantes para que te sientas cómodo desde el primer día. El servicio de <strong>Move‑out</strong> implica una limpieza profunda de todas las habitaciones, incluyendo baños, cocinas, dormitorios y zonas comunes, para entregar la vivienda como nueva.</p>
+            <p>Estas limpiezas profundas suelen incluir aspirado de alfombras, fregado de suelos, limpieza de ventanas, desinfección de superficies y lavado de textiles. El objetivo es dejar cada rincón reluciente para que el nuevo ocupante pueda disfrutar de un entorno limpio y seguro.</p>
+        </section>
+        <!-- Residential cleaning -->
+        <section id="residencial" class="service-detail">
+            <h2>Limpieza residencial</h2>
+            <p>Nuestro servicio de limpieza residencial brinda mantenimiento regular y detallado de viviendas. La limpieza estándar se centra en preservar el orden y la higiene mediante tareas como desempolvar, aspirar, fregar suelos y limpiar baños y cocinas.</p>
+            <p>Este tipo de servicio mantiene tu hogar en condiciones óptimas de manera rutinaria, evitando la acumulación de polvo y suciedad. Además, permite que disfrutes de un ambiente agradable y saludable sin tener que dedicar largas horas a la limpieza.</p>
+        </section>
+        <!-- Airbnb cleaning -->
+        <section id="airbnb" class="service-detail">
+            <h2>Limpieza Airbnb</h2>
+            <p>En los alquileres temporales, la limpieza tiene un impacto directo en las valoraciones de los huéspedes. Contratar a profesionales garantiza estándares de limpieza elevados, lo que se traduce en mejores opiniones y un mayor número de reservas.</p>
+            <p>Los servicios especializados de limpieza para Airbnb ayudan a mantener el alojamiento impecable, permitiéndote ahorrar tiempo y esfuerzo. Los profesionales se encargan de todas las tareas de limpieza y sanitización para que tus huéspedes disfruten de una experiencia excelente.</p>
+        </section>
+        <div class="back-link">
+            <a href="index.html">← Volver al inicio</a>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Valdes Cleaning Services. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script>
+        // Mobile navigation toggle
+        const navToggle = document.getElementById('nav-toggle');
+        const navMenu   = document.getElementById('nav-menu');
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('open');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valdes Cleaning Services – Contact</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index_en.html" class="logo">
+                <img src="images/logo.png" alt="Logo" class="logo-icon" />
+                Valdes Cleaning Services
+            </a>
+            <nav class="nav" id="nav-menu">
+                <ul>
+                    <li><a href="index_en.html">Home</a></li>
+                    <li><a href="servicios_en.html">Services</a></li>
+                    <li><a href="testimonials_en.html">Testimonials</a></li>
+                    <li><a href="contact_en.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="lang-switcher">
+                <a href="contacto.html" class="lang">ES</a> |
+                <a href="contact_en.html" class="lang active">EN</a>
+            </div>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Open menu">☰</button>
+        </div>
+    </header>
+    <main class="container contacto">
+        <h1>Contact</h1>
+        <p>Ready for a spotless clean? Get in touch with us to request a quote or book a service. We'll be happy to assist you!</p>
+        <div class="contact-info">
+            <p><strong>Phone:</strong> <a href="tel:+16892607519">(689) 260‑7519</a></p>
+            <p><strong>Email:</strong> <a href="mailto:mvg19994@gmail.com">mvg19994@gmail.com</a></p>
+            <p><strong>Hours:</strong> Monday through Friday from 8:00 AM to 6:00 PM.</p>
+        </div>
+        <div class="whatsapp">
+            <p>You can also send us a direct message via WhatsApp:</p>
+            <a href="https://wa.me/16892607519" class="btn whatsapp-btn" target="_blank" rel="noopener">Chat on WhatsApp</a>
+        </div>
+        <!-- Review form -->
+        <section class="review-section">
+            <h2>Leave Your Review</h2>
+            <p>Rate our services and share your experience. Your opinion helps us improve.</p>
+        <form id="review-form" onsubmit="submitReview(event)">
+                <div class="rating-options">
+                    <label><input type="radio" name="rating" value="1" required> 1</label>
+                    <label><input type="radio" name="rating" value="2"> 2</label>
+                    <label><input type="radio" name="rating" value="3"> 3</label>
+                    <label><input type="radio" name="rating" value="4"> 4</label>
+                    <label><input type="radio" name="rating" value="5"> 5</label>
+                    <span>stars</span>
+                </div>
+                <div class="comment-box">
+                    <label for="comment">Comment:</label>
+                    <textarea id="comment" name="comment" rows="4" required placeholder="Write your comment here..."></textarea>
+                </div>
+                <button type="submit" class="btn">Submit Review</button>
+            </form>
+        </section>
+        <div class="back-link">
+            <a href="index_en.html">← Back to home</a>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Valdes Cleaning Services. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        // Mobile navigation toggle
+        const navToggle = document.getElementById('nav-toggle');
+        const navMenu   = document.getElementById('nav-menu');
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('open');
+        });
+        // The submitReview function is now provided by reviews.js. This
+        // placeholder remains only for backwards compatibility but will
+        // be overwritten when the external script is loaded.
+    </script>
+    <!-- Load the reviews script that handles saving and redirecting reviews -->
+    <script src="reviews.js"></script>
+</body>
+</html>

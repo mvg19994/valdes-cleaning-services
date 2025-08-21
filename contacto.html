@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valdes Cleaning Services – Contacto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Logo Valdes Cleaning Services" class="logo-icon" />
+                Valdes Cleaning Services
+            </a>
+            <nav class="nav" id="nav-menu">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="testimonios.html">Testimonios</a></li>
+                    <li><a href="contacto.html" class="active">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="lang-switcher">
+                <a href="contacto.html" class="lang active">ES</a> |
+                <a href="contact_en.html" class="lang">EN</a>
+            </div>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú">☰</button>
+        </div>
+    </header>
+    <main class="container contacto">
+        <h1>Contacto</h1>
+        <p>¿Listo para una limpieza impecable? Ponte en contacto con nosotros para solicitar un presupuesto o reservar un servicio. ¡Estaremos encantados de atenderte!</p>
+        <div class="contact-info">
+            <p><strong>Teléfono:</strong> <a href="tel:+16892607519">(689) 260‑7519</a></p>
+            <p><strong>Email:</strong> <a href="mailto:mvg19994@gmail.com">mvg19994@gmail.com</a></p>
+            <p><strong>Horario:</strong> Lunes a Viernes de 8:00 a 18:00.</p>
+        </div>
+        <div class="whatsapp">
+            <p>También puedes enviarnos un mensaje directo por WhatsApp:</p>
+            <!-- Replace the phone number after 'wa.me/' with your company's WhatsApp number -->
+            <a href="https://wa.me/16892607519" class="btn whatsapp-btn" target="_blank" rel="noopener">Escríbenos por WhatsApp</a>
+        </div>
+
+        <!-- Review form -->
+        <section class="review-section">
+            <h2>Déjanos tu valoración</h2>
+            <p>Califica nuestros servicios y comparte tu experiencia. Tu opinión nos ayuda a mejorar.</p>
+        <form id="review-form" onsubmit="submitReview(event)">
+                <div class="rating-options">
+                    <label><input type="radio" name="rating" value="1" required> 1</label>
+                    <label><input type="radio" name="rating" value="2"> 2</label>
+                    <label><input type="radio" name="rating" value="3"> 3</label>
+                    <label><input type="radio" name="rating" value="4"> 4</label>
+                    <label><input type="radio" name="rating" value="5"> 5</label>
+                    <span>estrellas</span>
+                </div>
+                <div class="comment-box">
+                    <label for="comment">Comentario:</label>
+                    <textarea id="comment" name="comment" rows="4" required placeholder="Escribe tu comentario aquí..."></textarea>
+                </div>
+                <button type="submit" class="btn">Enviar reseña</button>
+            </form>
+        </section>
+        <div class="back-link">
+            <a href="index.html">← Volver al inicio</a>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Valdes Cleaning Services. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script>
+        // Mobile navigation toggle
+        const navToggle = document.getElementById('nav-toggle');
+        const navMenu   = document.getElementById('nav-menu');
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('open');
+        });
+
+        // The submitReview function is now provided by reviews.js. This
+        // placeholder remains only for backwards compatibility but will
+        // be overwritten when the external script is loaded.
+    </script>
+    <!-- Load the reviews script that handles saving and redirecting reviews -->
+    <script src="reviews.js"></script>
+</body>
+</html>

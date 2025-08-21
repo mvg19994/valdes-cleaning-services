@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valdes Cleaning Services – Testimonials</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index_en.html" class="logo">
+                <img src="images/logo.png" alt="Logo" class="logo-icon" />
+                Valdes Cleaning Services
+            </a>
+            <nav class="nav" id="nav-menu">
+                <ul>
+                    <li><a href="index_en.html">Home</a></li>
+                    <li><a href="servicios_en.html">Services</a></li>
+                    <li><a href="testimonials_en.html" class="active">Testimonials</a></li>
+                    <li><a href="contact_en.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="lang-switcher">
+                <a href="testimonios.html" class="lang">ES</a> |
+                <a href="testimonials_en.html" class="lang active">EN</a>
+            </div>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Open menu">☰</button>
+        </div>
+    </header>
+    <main class="container testimonios">
+        <h1>Testimonials</h1>
+        <p>Our clients rely on us to keep their spaces clean and tidy. Learn about some of their experiences.</p>
+        <div class="testimonial-list">
+            <article class="testimonial">
+                <blockquote>
+                    “I hired Valdes Cleaning Services for a move‑out cleaning and the results were incredible. They left my old house spotless and helped me get my deposit back without any issues.”
+                </blockquote>
+                <cite>— Ana G.</cite>
+            </article>
+            <article class="testimonial">
+                <blockquote>
+                    “Thanks to their residential cleaning service I have more free time and my home is always in perfect condition. Highly recommended!”
+                </blockquote>
+                <cite>— Luis M.</cite>
+            </article>
+            <article class="testimonial">
+                <blockquote>
+                    “I use their Airbnb cleaning for my apartment and the guest reviews speak for themselves. The professional cleaning makes bookings multiply.”
+                </blockquote>
+                <cite>— Carolina R.</cite>
+            </article>
+        </div>
+        <!-- Dynamic reviews submitted via the contact form will appear here -->
+        <div id="dynamic-reviews"></div>
+        <div class="back-link">
+            <a href="index_en.html">← Back to home</a>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Valdes Cleaning Services. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        const navToggle = document.getElementById('nav-toggle');
+        const navMenu   = document.getElementById('nav-menu');
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('open');
+        });
+    </script>
+    <!-- Load reviews script to populate dynamic testimonials and handle replies -->
+    <script src="reviews.js"></script>
+</body>
+</html>

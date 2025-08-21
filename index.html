@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valdes Cleaning Services – Inicio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Logo Valdes Cleaning Services" class="logo-icon" />
+                Valdes Cleaning Services
+            </a>
+            <nav class="nav" id="nav-menu">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="testimonios.html">Testimonios</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="lang-switcher">
+                <a href="index.html" class="lang active">ES</a> |
+                <a href="index_en.html" class="lang">EN</a>
+            </div>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú">☰</button>
+        </div>
+    </header>
+    <main>
+        <!-- Hero section -->
+        <section class="hero">
+            <div class="hero-img" role="img" aria-label="Fondo de limpieza"></div>
+            <div class="hero-content container">
+                <h1>Bienvenido a Valdes Cleaning Services</h1>
+                <p>Servicios de limpieza profesionales para tu hogar y propiedades de alquiler en Fort Lauderdale y alrededores. ¡Nos encargamos de que tus espacios luzcan impecables!</p>
+                <a href="contacto.html" class="btn">Contáctanos</a>
+            </div>
+        </section>
+        <!-- About / Introduction -->
+        <section class="intro container">
+            <h2>Soluciones de limpieza de confianza</h2>
+            <p>Con años de experiencia en el sector de la limpieza, nuestro equipo se dedica a ofrecer servicios fiables y de alta calidad. Cuidamos cada detalle para que tú puedas disfrutar de un espacio limpio y saludable sin preocupaciones.</p>
+        </section>
+        <!-- Services summary -->
+        <section class="services-summary container">
+            <h2>Nuestros servicios</h2>
+            <div class="service-cards">
+                <div class="service-card">
+                    <h3>Move‑in / Move‑out</h3>
+                    <p>Preparamos tu nuevo hogar o dejamos tu antigua vivienda impecable, con limpieza profunda en todas las superficies.</p>
+                    <a href="servicios.html#movein-moveout" class="link">Leer más</a>
+                </div>
+                <div class="service-card">
+                    <h3>Limpieza residencial</h3>
+                    <p>Mantenimiento regular y detallado de hogares. Incluye tareas esenciales como desempolvar, aspirar y fregar para preservar la limpieza y la higiene.</p>
+                    <a href="servicios.html#residencial" class="link">Leer más</a>
+                </div>
+                <div class="service-card">
+                    <h3>Limpieza Airbnb</h3>
+                    <p>Mantenemos tu alojamiento de alquiler vacacional en perfectas condiciones, favoreciendo opiniones positivas y más reservas.</p>
+                    <a href="servicios.html#airbnb" class="link">Leer más</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Valdes Cleaning Services. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script>
+        // Toggle navigation on mobile
+        const navToggle = document.getElementById('nav-toggle');
+        const navMenu   = document.getElementById('nav-menu');
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('open');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valdes Cleaning Services – Services</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index_en.html" class="logo">
+                <img src="images/logo.png" alt="Logo" class="logo-icon" />
+                Valdes Cleaning Services
+            </a>
+            <nav class="nav" id="nav-menu">
+                <ul>
+                    <li><a href="index_en.html">Home</a></li>
+                    <li><a href="servicios_en.html" class="active">Services</a></li>
+                    <li><a href="testimonials_en.html">Testimonials</a></li>
+                    <li><a href="contact_en.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="lang-switcher">
+                <a href="servicios.html" class="lang">ES</a> |
+                <a href="servicios_en.html" class="lang active">EN</a>
+            </div>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Open menu">☰</button>
+        </div>
+    </header>
+    <main class="container servicios">
+        <h1>Cleaning Services</h1>
+        <p>We offer cleaning solutions tailored to every need. Discover in detail what we can do for you.</p>
+        <!-- Move-in / Move-out -->
+        <section id="movein-moveout" class="service-detail">
+            <h2>Move‑in / Move‑out</h2>
+            <p>Move-in and move-out cleanings ensure your property is spotless before you move in or after you leave. Our <strong>move‑in</strong> service focuses on removing dust, dirt and contaminants so you feel comfortable from day one. The <strong>move‑out</strong> service involves deep cleaning of all rooms—bathrooms, kitchens, bedrooms and common areas—so the home is like new when handed over.</p>
+            <p>These thorough cleanings often include vacuuming carpets, mopping floors, cleaning windows, disinfecting surfaces and washing textiles. The goal is to leave every corner sparkling so the new occupant can enjoy a clean and safe environment.</p>
+        </section>
+        <!-- Residential cleaning -->
+        <section id="residential" class="service-detail">
+            <h2>Residential Cleaning</h2>
+            <p>Our residential cleaning service provides regular, detailed maintenance of homes. Standard cleaning focuses on preserving order and hygiene through tasks such as dusting, vacuuming, mopping floors and cleaning bathrooms and kitchens.</p>
+            <p>This service keeps your home in optimal condition on a routine basis, preventing the accumulation of dust and dirt. It also lets you enjoy a pleasant, healthy environment without spending long hours on cleaning.</p>
+        </section>
+        <!-- Airbnb cleaning -->
+        <section id="airbnb" class="service-detail">
+            <h2>Airbnb Cleaning</h2>
+            <p>In short‑term rentals, cleanliness has a direct impact on guest ratings. Hiring professionals guarantees high standards of cleanliness, translating into better reviews and more bookings.</p>
+            <p>Specialized Airbnb cleaning services help keep the property immaculate while saving you time and effort. Professionals handle all cleaning and sanitization tasks so your guests enjoy an excellent experience.</p>
+        </section>
+        <div class="back-link">
+            <a href="index_en.html">← Back to home</a>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Valdes Cleaning Services. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        const navToggle = document.getElementById('nav-toggle');
+        const navMenu   = document.getElementById('nav-menu');
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('open');
+        });
+    </script>
+</body>
+</html>
